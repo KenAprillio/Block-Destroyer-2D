@@ -100,7 +100,11 @@ public class StartController : MonoBehaviour
             {
                 GoToMenu();
             }
-        } else { 
+        } else {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
         }
     }
 
